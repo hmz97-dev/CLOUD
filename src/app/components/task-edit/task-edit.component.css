@@ -1,0 +1,21 @@
+.task-edit{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 1rem;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}

@@ -1,0 +1,7 @@
+<div class="task-add">
+    <input #updateTask type="text" [placeholder]="position + ' - ' + placeholder">
+    <div class="button">
+        <app-boutton label="Update" color="secondary" (click)="sendUpdateTask(updateTask.value)"></app-boutton>
+        <app-boutton label="Cancel" color="default" (click)="sendCancelMessage()"></app-boutton>
+    </div>
+</div>

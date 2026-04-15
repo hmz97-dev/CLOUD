@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="header">
+    <h2>MY DAILY TO-DO LIST</h2>
+    <h3>Total tasks ( {{tasks.length}} )</h3>
+  </div>
+
+  <ul *ngFor="let task of tasks">
+    <li *ngIf="task.isEdit == false">
+      <app-task-edit position={{task.position}} text={{task.task}} (editTask)="editTask(task.code)"
+        (deleteTask)="deleteTask(task.code)"></app-task-edit>
+    </li>
+    <li *ngIf="task.isEdit == true">
+      <app-task-add (updateTask)="updateTask(task.code,$event)" (cancel)="editTask(task.code)"
+        position={{task.position}} placeholder={{task.task}}></app-task-add>
+    </li>
+  </ul>
+</div>
+<div class="actions">
+  <app-input-add-task (addTaskEvent)="addTask($event);  "></app-input-add-task>
+  <app-delate-all (delateAll)="deleAlltasks()"></app-delate-all>
+</div>

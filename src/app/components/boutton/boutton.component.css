@@ -1,0 +1,55 @@
+button{
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    font-family:'Noto Sans, sans-serif' ;
+    transition: 1s ;
+    min-width: 100px;
+
+    &.default{
+        background-color: #838B84 ;
+        color: white;
+    }
+    &.primary{
+        background-color: #169FD1;
+        color: white;
+    }
+    &.primary:hover{
+        background-color: #096b8f;
+        transition: 1.5s;
+    }
+    &.secondary{
+        background-color: #4AC360;
+        color: white;
+    }
+    &.secondary:hover{
+        background-color: #388b47;
+    }
+    &.tertiary{
+        background-color: #DF4B1A;
+        color: white;
+    }
+    &.tertiary:hover{
+        background-color: #be370a;
+    }
+    &.quaternary{
+        background-color: green;
+        color: white;
+    }
+    &.quaternary:hover{
+        background-color: blue;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    &.small{
+        font-size: medium;
+    }
+    &.large{
+        width: 200px;
+    }
+}
